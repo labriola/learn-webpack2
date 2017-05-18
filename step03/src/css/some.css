@@ -1,0 +1,29 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #AABD87;
+}
+
+#app {
+    width: 45%;
+    margin: auto;
+}
+
+#app > img {
+    display: block;
+    margin: auto;
+}
+
+#app > p {
+    background: rgba(248,236,194, 0.55);
+    padding: 15px;
+    font-family: Verdana;
+    font-size: 18px;
+    font-color: #464237;
+}

@@ -1,0 +1,18 @@
+{
+  "singular": [
+    "ninja",
+    "cat",
+    "spaceship",
+    "blueberry",
+    "developer",
+    "moon"
+  ],
+  "plural": [
+    "ninjas",
+    "cats",
+    "spaceships",
+    "blueberries",
+    "developers",
+    "spacestations"
+  ]
+}

@@ -1,0 +1,4 @@
+./node_modules/.bin/webpack --config step05/config/webpack.config.js
+./node_modules/.bin/webpack --config step05/config/webpack.config.js --watch
+
+./node_modules/.bin/webpack --config step05/config/webpack.config.js --env.platform=cordova

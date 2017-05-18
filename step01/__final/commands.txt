@@ -1,0 +1,2 @@
+./node_modules/.bin/webpack step01/src/index.js public/bundle.js
+./node_modules/.bin/webpack step01/src/index.js public/bundle.js --output-pathinfo

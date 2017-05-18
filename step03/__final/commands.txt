@@ -1,0 +1,2 @@
+./node_modules/.bin/webpack --config step03/config/webpack.config.js
+./node_modules/.bin/webpack --config step03/config/webpack.config.js --watch
