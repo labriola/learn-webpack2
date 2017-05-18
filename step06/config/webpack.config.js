@@ -1,6 +1,5 @@
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const WebpackCleanupPlugin = require('webpack-cleanup-plugin');
 const path = require('path');
 
 const ROOT = path.resolve(__dirname, '../');
@@ -17,23 +16,7 @@ const withPlatform = platform => {
 		}),
 		new HtmlWebpackPlugin({
 		  title: 'libs, madish'
-		}),
-    new webpack.optimize.CommonsChunkPlugin({
-      name: 'vendor',
-      minChunks: function (module) {
-        return module.context && 
-               module.context.indexOf('node_modules') !== -1;//it's a nodemodule
-      }
-    }),
-    new webpack.optimize.CommonsChunkPlugin({
-      name: "manifest",
-      minChunks: Infinity
-    }),
-    new WebpackCleanupPlugin({
-        exclude: [
-          'index.html'
-        ] 
-    })
+		})		
   ];
 }
 

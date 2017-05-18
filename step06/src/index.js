@@ -1,7 +1,3 @@
-import {
-  sample
-} from 'lodash';
-
 import nouns from './json/nouns';
 import places from './json/places';
 import adjectives from './json/adjectives';
@@ -18,18 +14,23 @@ import {
   toDisplay
 } from './display';
 
+const oneOf = (ar) => {
+  const len = Math.floor(Math.random() * ar.length);  
+  return ar[len];
+};
+
 const words = {
- PNOUN1: sample(plural), 
- PLACE: sample(places), 
- NOUN1: sample(singular), 
- PNOUN2: sample(plural),
- NOUN2: sample(singular),
- ADJ1: sample(adjectives), 
- VERB1: sample(verbs), 
- NUMBER: sample(numbers), 
- ADJ2: sample(adjectives), 
- BODYPART: sample(bodyParts), 
- VERB2: sample(verbs) 
+ PNOUN1: oneOf(plural), 
+ PLACE: oneOf(places), 
+ NOUN1: oneOf(singular), 
+ PNOUN2: oneOf(plural),
+ NOUN2: oneOf(singular),
+ ADJ1: oneOf(adjectives), 
+ VERB1: oneOf(verbs), 
+ NUMBER: oneOf(numbers), 
+ ADJ2: oneOf(adjectives), 
+ BODYPART: oneOf(bodyParts), 
+ VERB2: oneOf(verbs) 
 };
 
 
